@@ -1,0 +1,9 @@
+jieba==0.42.1
+gensim==4.0.1
+transformers==4.4.2
+torch==1.8.1
+torchvision==0.9.1
+smoothnlp==0.4.0
+sqlalchemy==1.2.0
+wordcloud==1.8.1
+imageio==2.9.0
