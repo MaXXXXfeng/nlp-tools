@@ -1,5 +1,7 @@
 # nlp-tools
-常见的nlp工具
+![Version](https://img.shields.io/badge/Version-0.1-green.svg) ![Python3](https://img.shields.io/badge/Python-3-blue.svg?style=flat) 
+****
+常用的nlp工具
 
 ## 1 安装
 
