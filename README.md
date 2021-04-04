@@ -79,7 +79,7 @@ demo = Doraemon()
   ```python
   input_file = '~/raw_corpus.txt'
   model1_path = '~/w2ve'
-  model1_path = '~/w2ve.txt'
+  model2_path = '~/w2ve.txt'
   demo.train_vector(input_path=input_file, model_path=model1_path) # 保存二进制模型文件
   demo.train_vector(input_path=input_file, model_path=model2_path,use_binary=False) # 保存txt模型文件
   
