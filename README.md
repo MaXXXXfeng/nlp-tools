@@ -34,7 +34,7 @@ demo = Doraemon()
 
 对中文文本进行分词
 
-- 方法名：cut()
+- 方法：cut()
 
 - 参数
 
@@ -43,7 +43,7 @@ demo = Doraemon()
   - **is_file**: 是否进行文件分词。默认为False。如果对文件分词，sentence需要为txt文件对应路径。
   - **output_path**: 文件分词结果输出路径。默认输出在原文件路径下。
 
-- 返回值
+- 返回
 
   基于分隔符分隔的字符串
 
@@ -54,7 +54,7 @@ demo = Doraemon()
   seg_words = demo.cut(test_sentence)
   ```
   
-- 参考文献
+- 参考
 
   - [结巴中文分词](https://github.com/fxsjy/jieba)
 
@@ -63,7 +63,7 @@ demo = Doraemon()
 
 通过自定义语料，训练词向量
 
-- 方法名：train_vector()
+- 方法：train_vector()
 
 - 参数
 
@@ -85,7 +85,7 @@ demo = Doraemon()
   
   ```
 
-- 参考文献
+- 参考
 
   - [word2vec](https://en.wikipedia.org/wiki/Word2vec)
   - [使用gensim训练词向量](https://radimrehurek.com/gensim/models/word2vec.html)
@@ -94,14 +94,14 @@ demo = Doraemon()
 
 获取指定词/句子的词向量
 
-- 方法名：get_vector()
+- 方法：get_vector()
 
 - 参数
 
   - **inputs**:字符串，中文单词。bert模式可对句子编码。
   - **mode**: 词向量模式，默认word2vec。可选bert。
 
-- 返回值
+- 返回
 
   - **w2v模式**
 
@@ -125,7 +125,7 @@ demo = Doraemon()
   result = demo.get_vector(sentence,mode='bert')
   ```
 
-- 参考文献
+- 参考
 
   - [使用gensim训练词向量](https://radimrehurek.com/gensim/models/word2vec.html)
   - [transformers-BertModel](https://huggingface.co/transformers/model_doc/bert.html?highlight=bertmodel#transformers.BertModel)
@@ -135,14 +135,14 @@ demo = Doraemon()
 
 计算两个词的相似度
 
-- 方法名: compute_similarity()
+- 方法: compute_similarity()
 
 - 参数
 
   - **word1**: 字符,待计算的词
   - **word2**: 字符,待计算的词
 
-- 返回值
+- 返回
 
   - **成功**：0~1之间的浮点数。
   - **失败**：-1。待计算词有词不在词表中。
@@ -159,14 +159,14 @@ demo = Doraemon()
 
 返回输入词组的相似词
 
-- 方法名: find_most_similar_words()
+- 方法: find_most_similar_words()
 
 - 参数
 
   - **word**: 格式 str或[str],待查找的种子词或多个种子词
   - **K**: 返回的相似词数量
 
-- 返回值
+- 返回
 
   - **成功**：[(word1,similarity),(word2,similarity)]
   - **失败**：[ ], 输入的词不在词表中
@@ -185,14 +185,14 @@ demo = Doraemon()
 
 基于给定语料，进行新词发现
 
-- 方法名：find_new_words()
+- 方法：find_new_words()
 
 - 参数
 
   - **inputs**: txt文本文件路径或[str,str...]
   - **words_num**: 返回的新词数量,默认200
 
-- 返回值
+- 返回
 
   [word1,word2,...wordn]
 
@@ -203,7 +203,7 @@ demo = Doraemon()
   new_words = demo.find_new_words(input_file)
   ```
 
-- 参考文献
+- 参考
 
   - [新词发现](https://zhuanlan.zhihu.com/p/80385615)
 
@@ -211,7 +211,7 @@ demo = Doraemon()
 
 基于给定语料生产词云
 
-- 方法名：create_word_cloud()
+- 方法：create_word_cloud()
 
 - 参数
 
@@ -226,7 +226,7 @@ demo = Doraemon()
   demo.create_word_cloud(inputs=input_file,output_path=None,bg_img=None)
   ```
 
-- 参考文献
+- 参考
 
   - [wordcloud](https://amueller.github.io/word_cloud/index.html)
   - [中文词云实例](https://github.com/TommyZihao/zihaowordcloud)
