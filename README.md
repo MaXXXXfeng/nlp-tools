@@ -23,14 +23,15 @@ pip install -r requirements.txt
 各功能具体用法如下，使用前需要先初始化demo
 
 ```python
+from nlp import Doraemon
 demo = Doraemon()
 ```
 
 参数说明：
 
-- pre_load_w2v: 是否预加载word2vec向量。默认不加载，如果需要用到词向量或相似度计算等可以提前加载。
-- pre_load_bert: 是否预加载bert模型，默认加载。
-- lang: 语言，默认cn。用于bert模型加载。
+- **pre_load_w2v:** 是否预加载word2vec向量。默认不加载，如果需要用到词向量或相似度计算等可以提前加载。
+- **pre_load_bert:** 是否预加载bert模型，默认加载。
+- **lang**: 语言，默认cn。用于bert模型加载。
 
 ### 2.1 分词
 
@@ -132,7 +133,6 @@ demo = Doraemon()
   - [使用gensim训练词向量](https://radimrehurek.com/gensim/models/word2vec.html)
   - [transformers-BertModel](https://huggingface.co/transformers/model_doc/bert.html?highlight=bertmodel#transformers.BertModel)
 	- [bert](https://arxiv.org/pdf/1810.04805.pdf)
-  
 ### 2.4 相似度计算
 
 计算两个词的相似度
